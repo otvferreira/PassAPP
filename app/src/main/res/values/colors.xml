@@ -1,0 +1,9 @@
+<resources>
+    <!-- Cor do azul do Cruzeiro -->
+    <color name="colorPrimary">#003DA5</color>
+    <color name="colorPrimaryVariant">#00297B</color>
+    <color name="colorAccent">#003DA5</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+</resources>

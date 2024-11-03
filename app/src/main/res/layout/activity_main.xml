@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título do App -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerador de Senhas Aleatórias"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <!-- Exibição da Senha Gerada -->
+    <TextView
+        android:id="@+id/tvGeneratedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senha Gerada"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Comprimento da Senha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comprimento:"
+            android:textSize="16sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarLength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="20"
+            android:progress="12"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/tvPasswordLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Opções de Caracteres -->
+    <CheckBox
+        android:id="@+id/cbUppercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir Letras Maiúsculas"/>
+
+    <CheckBox
+        android:id="@+id/cbLowercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir Letras Minúsculas"/>
+
+    <CheckBox
+        android:id="@+id/cbNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir Números"/>
+
+    <CheckBox
+        android:id="@+id/cbExcludeSimilar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir Caracteres Semelhantes (ex: 0, O, l, 1)"/>
+
+    <!-- Botões de Ação -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnRegenerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regenerar"/>
+
+        <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copiar"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
